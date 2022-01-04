@@ -27,7 +27,7 @@
 		DFF8ABE62784C7B200698189 /* AR3001BluetoothHostControllerUSBTransport.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AR3001BluetoothHostControllerUSBTransport.kext; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFF8ABEA2784C7B200698189 /* AR3001BluetoothHostControllerUSBTransport.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AR3001BluetoothHostControllerUSBTransport.cpp; sourceTree = "<group>"; };
 		DFF8ABEC2784C7B200698189 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DFF8ABF72784C7BE00698189 /* AR3002BluetoothHostControllerUSBTransport.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AR3002BluetoothHostControllerUSBTransport.kext; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFF8ABF72784C7BE00698189 /* QCABluetoothHostControllerUSBTransport.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QCABluetoothHostControllerUSBTransport.kext; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFF8ABF92784C7BE00698189 /* AR3002BluetoothHostControllerUSBTransport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AR3002BluetoothHostControllerUSBTransport.h; sourceTree = "<group>"; };
 		DFF8ABFB2784C7BE00698189 /* AR3002BluetoothHostControllerUSBTransport.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AR3002BluetoothHostControllerUSBTransport.cpp; sourceTree = "<group>"; };
 		DFF8ABFD2784C7BE00698189 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -68,7 +68,7 @@
 			children = (
 				DFF8ABCE2784C71C00698189 /* HostControllers */,
 				DFF8ABE72784C7B200698189 /* AR3001 */,
-				DFF8ABF82784C7BE00698189 /* AR3002 */,
+				DFF8ABF82784C7BE00698189 /* QCA */,
 				DFF8AC192784D92C00698189 /* .gitignore */,
 				DFF8ABCD2784C71C00698189 /* Products */,
 			);
@@ -79,7 +79,7 @@
 			children = (
 				DFF8ABCC2784C71C00698189 /* QCABluetoothFamily.kext */,
 				DFF8ABE62784C7B200698189 /* AR3001BluetoothHostControllerUSBTransport.kext */,
-				DFF8ABF72784C7BE00698189 /* AR3002BluetoothHostControllerUSBTransport.kext */,
+				DFF8ABF72784C7BE00698189 /* QCABluetoothHostControllerUSBTransport.kext */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -106,7 +106,7 @@
 			path = AR3001;
 			sourceTree = "<group>";
 		};
-		DFF8ABF82784C7BE00698189 /* AR3002 */ = {
+		DFF8ABF82784C7BE00698189 /* QCA */ = {
 			isa = PBXGroup;
 			children = (
 				DFF8AC1B2784DBC300698189 /* Firmwares */,
@@ -114,7 +114,7 @@
 				DFF8ABFB2784C7BE00698189 /* AR3002BluetoothHostControllerUSBTransport.cpp */,
 				DFF8ABFD2784C7BE00698189 /* Info.plist */,
 			);
-			path = AR3002;
+			path = QCA;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,9 +184,9 @@
 			productReference = DFF8ABE62784C7B200698189 /* AR3001BluetoothHostControllerUSBTransport.kext */;
 			productType = "com.apple.product-type.kernel-extension";
 		};
-		DFF8ABF62784C7BE00698189 /* AR3002BluetoothHostControllerUSBTransport */ = {
+		DFF8ABF62784C7BE00698189 /* QCABluetoothHostControllerUSBTransport */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DFF8ABFE2784C7BE00698189 /* Build configuration list for PBXNativeTarget "AR3002BluetoothHostControllerUSBTransport" */;
+			buildConfigurationList = DFF8ABFE2784C7BE00698189 /* Build configuration list for PBXNativeTarget "QCABluetoothHostControllerUSBTransport" */;
 			buildPhases = (
 				DFF8ABF22784C7BE00698189 /* Headers */,
 				DFF8ABF32784C7BE00698189 /* Sources */,
@@ -197,9 +197,9 @@
 			);
 			dependencies = (
 			);
-			name = AR3002BluetoothHostControllerUSBTransport;
+			name = QCABluetoothHostControllerUSBTransport;
 			productName = AR3002BluetoothHostControllerUSBTransport;
-			productReference = DFF8ABF72784C7BE00698189 /* AR3002BluetoothHostControllerUSBTransport.kext */;
+			productReference = DFF8ABF72784C7BE00698189 /* QCABluetoothHostControllerUSBTransport.kext */;
 			productType = "com.apple.product-type.kernel-extension";
 		};
 /* End PBXNativeTarget section */
@@ -237,7 +237,7 @@
 			targets = (
 				DFF8ABCB2784C71C00698189 /* QCABluetoothFamily */,
 				DFF8ABE52784C7B200698189 /* AR3001BluetoothHostControllerUSBTransport */,
-				DFF8ABF62784C7BE00698189 /* AR3002BluetoothHostControllerUSBTransport */,
+				DFF8ABF62784C7BE00698189 /* QCABluetoothHostControllerUSBTransport */,
 			);
 		};
 /* End PBXProject section */
@@ -970,15 +970,15 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AR3002/Info.plist;
+				INFOPLIST_FILE = QCA/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				MACOSX_DEPLOYMENT_TARGET = "$(inherited)";
-				MODULE_NAME = com.cjiang.AR3002BluetoothHostControllerUSBTransport;
+				MODULE_NAME = com.cjiang.QCABluetoothHostControllerUSBTransport;
 				MODULE_VERSION = 1.0.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cjiang.AR3002BluetoothHostControllerUSBTransport;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cjiang.QCABluetoothHostControllerUSBTransport;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = macosx;
@@ -1035,14 +1035,14 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AR3002/Info.plist;
+				INFOPLIST_FILE = QCA/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				MACOSX_DEPLOYMENT_TARGET = "$(inherited)";
-				MODULE_NAME = com.cjiang.AR3002BluetoothHostControllerUSBTransport;
+				MODULE_NAME = com.cjiang.QCABluetoothHostControllerUSBTransport;
 				MODULE_VERSION = 1.0.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cjiang.AR3002BluetoothHostControllerUSBTransport;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cjiang.QCABluetoothHostControllerUSBTransport;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = macosx;
@@ -1099,14 +1099,14 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AR3002/Info.plist;
+				INFOPLIST_FILE = QCA/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				MACOSX_DEPLOYMENT_TARGET = "$(inherited)";
-				MODULE_NAME = com.cjiang.AR3002BluetoothHostControllerUSBTransport;
+				MODULE_NAME = com.cjiang.QCABluetoothHostControllerUSBTransport;
 				MODULE_VERSION = 1.0.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cjiang.AR3002BluetoothHostControllerUSBTransport;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cjiang.QCABluetoothHostControllerUSBTransport;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = macosx;
@@ -1163,14 +1163,14 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AR3002/Info.plist;
+				INFOPLIST_FILE = QCA/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				MACOSX_DEPLOYMENT_TARGET = "$(inherited)";
-				MODULE_NAME = com.cjiang.AR3002BluetoothHostControllerUSBTransport;
+				MODULE_NAME = com.cjiang.QCABluetoothHostControllerUSBTransport;
 				MODULE_VERSION = 1.0.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cjiang.AR3002BluetoothHostControllerUSBTransport;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cjiang.QCABluetoothHostControllerUSBTransport;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = macosx;
@@ -1215,7 +1215,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = "Big Sur";
 		};
-		DFF8ABFE2784C7BE00698189 /* Build configuration list for PBXNativeTarget "AR3002BluetoothHostControllerUSBTransport" */ = {
+		DFF8ABFE2784C7BE00698189 /* Build configuration list for PBXNativeTarget "QCABluetoothHostControllerUSBTransport" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DFF8ABFF2784C7BE00698189 /* Big Sur */,
