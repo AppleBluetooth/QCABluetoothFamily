@@ -16,6 +16,7 @@
 		DFF8AC142784D43F00698189 /* Firmwares in Resources */ = {isa = PBXBuildFile; fileRef = DFF8AC132784D43F00698189 /* Firmwares */; };
 		DFF8AC162784D5A800698189 /* Ath3KBluetoothHostControllerTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = DFF8AC152784D5A800698189 /* Ath3KBluetoothHostControllerTypes.h */; };
 		DFF8AC1A2784D92C00698189 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = DFF8AC192784D92C00698189 /* .gitignore */; };
+		DFF8AC1C2784DBC300698189 /* Firmwares in Resources */ = {isa = PBXBuildFile; fileRef = DFF8AC1B2784DBC300698189 /* Firmwares */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		DFF8AC132784D43F00698189 /* Firmwares */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Firmwares; sourceTree = "<group>"; };
 		DFF8AC152784D5A800698189 /* Ath3KBluetoothHostControllerTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ath3KBluetoothHostControllerTypes.h; sourceTree = "<group>"; };
 		DFF8AC192784D92C00698189 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		DFF8AC1B2784DBC300698189 /* Firmwares */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Firmwares; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 		DFF8ABF82784C7BE00698189 /* AR3002 */ = {
 			isa = PBXGroup;
 			children = (
+				DFF8AC1B2784DBC300698189 /* Firmwares */,
 				DFF8ABF92784C7BE00698189 /* AR3002BluetoothHostControllerUSBTransport.h */,
 				DFF8ABFB2784C7BE00698189 /* AR3002BluetoothHostControllerUSBTransport.cpp */,
 				DFF8ABFD2784C7BE00698189 /* Info.plist */,
@@ -245,6 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFF8AC1A2784D92C00698189 /* .gitignore in Resources */,
+				DFF8AC1C2784DBC300698189 /* Firmwares in Resources */,
 				DFF8AC142784D43F00698189 /* Firmwares in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
